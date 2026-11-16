@@ -76,7 +76,7 @@ export default function ProductsPage() {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-xs font-semibold text-amber-800 mb-3">
             <Layers className="w-3.5 h-3.5 text-amber-600" />
-            <span>Jabra Türkiye Kurumsal B2B Portföyü</span>
+            <span>Jabra Türkiye Kurumsal Portföyü</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-slate-900">
             Tüm Kurumsal <span className="text-amber-600">Jabra Modelleri</span>

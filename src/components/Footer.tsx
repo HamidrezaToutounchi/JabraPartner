@@ -13,12 +13,12 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <JabraLogo />
               <div className="border-l border-slate-700 pl-3">
-                <span className="text-white font-black text-lg tracking-tight block">Partner B2B</span>
+                <span className="text-white font-black text-lg tracking-tight block">Partner</span>
                 <span className="text-[10px] text-amber-400 font-bold uppercase tracking-wider">Kurumsal Portal</span>
               </div>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
-              Jabra'nın Türkiye'deki tüm kurumsal ofis kulaklıkları, çağrı merkezi sistemleri, saha çözümleri ve video konferans portföyü için yetkili B2B proje merkezi.
+              Jabra'nın Türkiye'deki tüm kurumsal ofis kulaklıkları, çağrı merkezi sistemleri, saha çözümleri ve video konferans portföyü için yetkili kurumsal proje merkezi.
             </p>
             <div className="flex items-center gap-2 text-xs text-slate-300 bg-slate-800/80 border border-slate-700 p-2.5 rounded-lg">
               <ShieldCheck className="w-4 h-4 text-[#FFD100] flex-shrink-0" />
@@ -94,10 +94,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* B2B Support Desk */}
+          {/* Support Desk */}
           <div>
             <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-4 border-b border-slate-800 pb-2">
-              Kurumsal B2B Masası
+              Kurumsal Proje Masası
             </h4>
             <ul className="space-y-3 text-xs">
               <li className="flex items-center gap-2.5">
@@ -106,7 +106,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#FFD100]" />
-                <span className="text-slate-200">b2b@jabrapartner.com.tr</span>
+                <span className="text-slate-200">info@jabrapartner.com.tr</span>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#FFD100] mt-0.5" />
@@ -120,9 +120,9 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} jabrapartner.com.tr — Jabra Türkiye Kurumsal Portföy & B2B Proje Merkezi.</p>
+          <p>© {new Date().getFullYear()} jabrapartner.com.tr — Jabra Türkiye Kurumsal Portföy & Proje Merkezi.</p>
           <div className="flex space-x-6 text-slate-500">
-            <span>B2B Satış Şartları</span>
+            <span>Kurumsal Satış Şartları</span>
             <span>Gizlilik Politikası</span>
             <span>Garanti & RMA Süreçleri</span>
           </div>

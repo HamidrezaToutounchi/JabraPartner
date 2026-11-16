@@ -69,12 +69,12 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-      {/* Top B2B Announcement Bar */}
+      {/* Top Announcement Bar */}
       <div className="bg-slate-900 text-slate-300 px-4 py-1.5 text-[11px] font-medium border-b border-slate-800">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
           <div className="flex items-center gap-2">
             <ShieldCheck className="w-3.5 h-3.5 text-amber-400" />
-            <span className="font-semibold text-white">Jabra Türkiye Resmi B2B Partner Masası</span>
+            <span className="font-semibold text-white">Jabra Türkiye Resmi Partner Masası</span>
             <span className="hidden sm:inline text-slate-600">|</span>
             <span className="hidden sm:inline text-slate-400">Kurumsal Proje Koruması & Yetkili İskonto Avantajı</span>
           </div>
@@ -94,14 +94,9 @@ export default function Navbar() {
           <Link href="/" className="flex items-center group">
             <JabraLogo />
             <div className="h-5 w-[1px] bg-slate-200 mx-3"></div>
-            <div className="flex items-center gap-1.5">
-              <span className="text-slate-900 font-extrabold text-base sm:text-lg tracking-tight">
-                Partner
-              </span>
-              <span className="text-[10px] font-bold text-sky-800 bg-sky-50 border border-sky-200 px-2 py-0.5 rounded">
-                B2B Portal
-              </span>
-            </div>
+            <span className="text-slate-900 font-extrabold text-base sm:text-lg tracking-tight">
+              Partner
+            </span>
           </Link>
 
           {/* Desktop Nav Links */}

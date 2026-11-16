@@ -20,13 +20,13 @@ export default function ProjeTeklifiPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5 space-y-6">
             <span className="text-xs font-black text-amber-600 uppercase tracking-wider block">
-              B2B Yetkili Proje Kaydı
+              Yetkili Kurumsal Proje Kaydı
             </span>
             <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
               Kurumsal Proje ve <span className="text-amber-600">Toplu Satış Masası</span>
             </h1>
             <p className="text-sm text-slate-600 leading-relaxed">
-              50+ ve 100+ adetli kurumsal kulaklık ve oda sistemi projelerinizde Jabra Türkiye Resmi Distribütör proje koruması ve en yüksek B2B iskonto avantajından yararlanın.
+              50+ ve 100+ adetli kurumsal kulaklık ve oda sistemi projelerinizde Jabra Türkiye Resmi Distribütör proje koruması ve en yüksek kurumsal iskonto avantajından yararlanın.
             </p>
 
             <div className="space-y-4 pt-4 border-t border-slate-200 text-xs text-slate-700">
@@ -56,7 +56,7 @@ export default function ProjeTeklifiPage() {
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-700">
                 <Mail className="w-4 h-4 text-amber-600" />
-                <span className="font-semibold">b2b@jabrapartner.com.tr</span>
+                <span className="font-semibold">info@jabrapartner.com.tr</span>
               </div>
             </div>
           </div>

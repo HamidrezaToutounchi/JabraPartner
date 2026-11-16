@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="flex justify-center mb-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-amber-300 shadow-sm text-xs font-bold text-slate-800">
             <span className="w-2 h-2 rounded-full bg-amber-500 animate-ping" />
-            <span className="text-amber-700 font-black">Jabra Türkiye Resmi B2B Portalı</span>
+            <span className="text-amber-700 font-black">Jabra Türkiye Resmi Partner Portalı</span>
             <span className="text-slate-300">|</span>
             <span className="text-slate-600">Tüm Kurumsal Portföy & Özel Proje İskontoları</span>
           </div>
@@ -21,7 +21,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-6xl font-black tracking-tight leading-[1.15] text-slate-900">
             Jabra Kurumsal Portföyü,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600">
-              Proje Fiyatlandırması ve B2B Çözüm Merkezi
+              Proje Fiyatlandırması ve Kurumsal Çözüm Merkezi
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-slate-600 leading-relaxed font-normal">

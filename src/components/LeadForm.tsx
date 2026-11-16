@@ -38,7 +38,7 @@ export default function LeadForm({
         <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto">
           <CheckCircle2 className="w-10 h-10" />
         </div>
-        <h3 className="text-2xl font-black text-slate-900">B2B Proje Kaydınız Alındı!</h3>
+        <h3 className="text-2xl font-black text-slate-900">Kurumsal Proje Kaydınız Alındı!</h3>
         <p className="text-sm text-slate-600 max-w-md mx-auto leading-relaxed">
           Kurumsal proje yöneticimiz en geç <strong>2 iş saati</strong> içinde sizinle iletişime geçerek kurumsal iskonto tablosu ve demo cihaz planlamasını iletecektir.
         </p>
