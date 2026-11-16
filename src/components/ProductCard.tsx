@@ -39,23 +39,23 @@ export default function ProductCard({ product }: { product: JabraProduct }) {
   };
 
   return (
-    <div className="group bg-white hover:bg-slate-50/50 border border-slate-200/90 hover:border-amber-400 rounded-3xl p-6 transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-xl hover:-translate-y-1">
+    <div className="group bg-white hover:bg-slate-50/50 border border-slate-200/90 hover:border-amber-400 rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-300 flex flex-col justify-between shadow-xs hover:shadow-xl hover:-translate-y-1">
       <div>
         {/* Badges */}
-        <div className="flex flex-wrap items-center justify-between gap-2 mb-4">
-          <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
+        <div className="flex flex-wrap items-center justify-between gap-2 mb-3 sm:mb-4">
+          <div className="flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 sm:py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
             {getCategoryIcon(product.category)}
             <span>{product.subcategory}</span>
           </div>
           {product.badge && (
-            <span className="text-[10px] font-black uppercase px-2.5 py-1 rounded-full bg-[#FFD100] text-slate-950 shadow-sm border border-amber-300">
+            <span className="text-[10px] font-black uppercase px-2.5 py-0.5 sm:py-1 rounded-full bg-[#FFD100] text-slate-950 shadow-xs border border-amber-300">
               {product.badge}
             </span>
           )}
         </div>
 
         {/* Product Image Stage */}
-        <div className="relative h-48 w-full flex items-center justify-center p-6 bg-gradient-to-b from-slate-50 to-slate-100/70 rounded-2xl mb-5 border border-slate-100 group-hover:border-slate-200 transition-colors">
+        <div className="relative h-44 sm:h-48 w-full flex items-center justify-center p-4 sm:p-6 bg-gradient-to-b from-slate-50 to-slate-100/70 rounded-xl sm:rounded-2xl mb-4 sm:mb-5 border border-slate-100 group-hover:border-slate-200 transition-colors">
           <img
             src={product.imageUrl}
             alt={product.model}
@@ -64,7 +64,7 @@ export default function ProductCard({ product }: { product: JabraProduct }) {
         </div>
 
         {/* Title & Short Description */}
-        <h3 className="text-xl font-black text-slate-900 group-hover:text-amber-600 transition-colors leading-tight mb-2">
+        <h3 className="text-lg sm:text-xl font-black text-slate-900 group-hover:text-amber-600 transition-colors leading-tight mb-2">
           {product.model}
         </h3>
         <p className="text-xs text-slate-600 leading-relaxed mb-4 line-clamp-2">

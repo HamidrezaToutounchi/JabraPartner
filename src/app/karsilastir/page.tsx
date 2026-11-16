@@ -29,31 +29,31 @@ export default function ComparePage() {
   };
 
   return (
-    <div className="py-16 bg-slate-50 text-slate-900 min-h-screen">
+    <div className="py-10 sm:py-16 bg-slate-50 text-slate-900 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-amber-600 mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-amber-600 mb-6 sm:mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Ana Sayfaya Dön</span>
         </Link>
 
-        <div className="text-center max-w-3xl mx-auto mb-10">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <span className="text-xs font-black text-amber-600 uppercase tracking-wider block mb-2">
             Yan Yana Karşılaştırma Aracı
           </span>
-          <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
             4 Ürüne Kadar <span className="text-amber-600">Karşılaştırın</span>
           </h1>
-          <p className="mt-3 text-slate-600 text-sm">
+          <p className="mt-3 text-slate-600 text-xs sm:text-sm">
             Farklı kulaklık, hoparlör ve video sistemlerinin teknik özelliklerini karşılaştırmalı tablodan detaylıca inceleyin.
           </p>
         </div>
 
         {/* Product selector dropdown bar */}
         {selectedIds.length < 4 && (
-          <div className="mb-8 p-4 bg-white border border-slate-200 rounded-2xl flex flex-wrap items-center justify-between gap-4 shadow-sm">
+          <div className="mb-6 sm:mb-8 p-3.5 sm:p-4 bg-white border border-slate-200 rounded-xl sm:rounded-2xl flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 shadow-xs">
             <span className="text-xs text-slate-700 font-bold">
               Karşılaştırmaya Ürün Ekle ({selectedIds.length}/4 seçili):
             </span>
@@ -78,9 +78,14 @@ export default function ComparePage() {
           </div>
         )}
 
+        {/* Mobile Horizontal Scroll Hint */}
+        <div className="sm:hidden flex items-center justify-center gap-1.5 text-xs text-amber-800 bg-amber-50 border border-amber-200 rounded-xl py-2 px-3 mb-3 font-semibold">
+          <span>👉 Tabloyu sağa-sola kaydırarak ürünleri kıyaslayın</span>
+        </div>
+
         {/* Side-by-side Table */}
-        <div className="overflow-x-auto rounded-3xl border border-slate-200 bg-white shadow-sm mb-16">
-          <table className="w-full text-left text-xs sm:text-sm">
+        <div className="overflow-x-auto touch-scroll rounded-2xl sm:rounded-3xl border border-slate-200 bg-white shadow-xs sm:shadow-sm mb-12 sm:mb-16">
+          <table className="w-full text-left text-xs sm:text-sm min-w-[700px]">
             <thead>
               <tr className="border-b border-slate-200 bg-slate-50">
                 <th className="p-4 font-bold text-slate-600 w-44">Ürün Görseli & Model</th>

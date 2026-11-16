@@ -19,34 +19,34 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
   }
 
   return (
-    <div className="py-16 bg-slate-50 text-slate-900 min-h-screen">
+    <div className="py-10 sm:py-16 bg-slate-50 text-slate-900 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link
           href="/urunler"
-          className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-amber-600 mb-8 transition-colors"
+          className="inline-flex items-center gap-2 text-xs font-bold text-slate-500 hover:text-amber-600 mb-6 sm:mb-8 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Tüm Ürün Kataloğuna Dön</span>
         </Link>
 
         {/* Hero Product Info */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start mb-12 sm:mb-16">
           {/* Product Image */}
-          <div className="lg:col-span-6 bg-white border border-slate-200 rounded-3xl p-8 sm:p-12 flex items-center justify-center relative shadow-sm min-h-[380px]">
+          <div className="lg:col-span-6 bg-white border border-slate-200 rounded-2xl sm:rounded-3xl p-6 sm:p-12 flex items-center justify-center relative shadow-xs sm:shadow-sm min-h-[260px] sm:min-h-[380px]">
             {product.badge && (
-              <span className="absolute top-6 left-6 text-xs font-black px-3.5 py-1.5 bg-[#FFD100] text-slate-950 rounded-full shadow-sm">
+              <span className="absolute top-4 left-4 sm:top-6 sm:left-6 text-[10px] sm:text-xs font-black px-2.5 sm:px-3.5 py-1 sm:py-1.5 bg-[#FFD100] text-slate-950 rounded-full shadow-xs">
                 {product.badge}
               </span>
             )}
             <img
               src={product.imageUrl}
               alt={product.model}
-              className="max-h-[340px] w-auto object-contain filter drop-shadow-md"
+              className="max-h-[220px] sm:max-h-[340px] w-auto max-w-full object-contain filter drop-shadow-md"
             />
           </div>
 
           {/* Details */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-6 space-y-4 sm:space-y-6">
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-[11px] font-black text-amber-700 bg-amber-100/60 px-2.5 py-1 rounded-md uppercase tracking-wider">
@@ -55,7 +55,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
                 <span className="text-slate-300">/</span>
                 <span className="text-[11px] text-slate-600 font-semibold">{product.subcategory}</span>
               </div>
-              <h1 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+              <h1 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight">
                 {product.model}
               </h1>
               <p className="text-base text-slate-600 mt-4 leading-relaxed">

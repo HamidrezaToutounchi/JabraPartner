@@ -77,22 +77,22 @@ export default function ProductFinder() {
   const rec = getRecommendation();
 
   return (
-    <section id="product-finder" className="py-24 bg-slate-50 border-b border-slate-200 text-slate-900 relative">
+    <section id="product-finder" className="py-14 sm:py-24 bg-slate-50 border-b border-slate-200 text-slate-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-amber-300 text-xs font-bold text-amber-700 mb-3 shadow-sm">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-amber-300 text-xs font-bold text-amber-700 mb-3 shadow-xs">
             <Compass className="w-3.5 h-3.5 text-amber-600" />
             <span>İnteraktif Ürün Sihirbazı</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-slate-900">
+          <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-slate-900">
             Çalışma Tarzınıza ve Ekibinize Göre <span className="text-amber-600">En Doğru Cihazı Bulun</span>
           </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base">
+          <p className="mt-3 text-slate-600 text-xs sm:text-base">
             Çalışma ortamınızı, bağlantı tipinizi ve yazılım platformunuzu belirleyin; kurumunuz için en yüksek verimlilik sağlayacak modeli önerelim.
           </p>
         </div>
 
-        <div className="bg-white border border-slate-200 rounded-3xl p-6 sm:p-10 shadow-xl">
+        <div className="bg-white border border-slate-200 rounded-2xl sm:rounded-3xl p-4 sm:p-10 shadow-lg sm:shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
             {/* Left Steps */}
             <div className="lg:col-span-7 space-y-8">
