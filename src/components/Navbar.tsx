@@ -93,11 +93,11 @@ export default function Navbar() {
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
             <a
-              href="tel:08503005227"
+              href="tel:08508500856"
               className="flex items-center gap-1 text-slate-300 hover:text-amber-400 transition-colors"
             >
               <Phone className="w-3 h-3 text-amber-400" />
-              <span>Destek: <strong className="text-white">0850 300 JABRA</strong></span>
+              <span>Destek: <strong className="text-white">0850 850 08 56</strong></span>
             </a>
           </div>
         </div>
@@ -295,7 +295,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(false)}
             className="flex items-center justify-between px-3.5 py-3 text-sm font-bold text-slate-800 hover:bg-amber-50/60 rounded-xl transition-colors"
           >
-            <span>Proje Kaydı & Bayi İskontosu</span>
+            <span>Kurumsal Proje Kaydı & İskonto</span>
             <ChevronRight className="w-4 h-4 text-slate-400" />
           </Link>
 

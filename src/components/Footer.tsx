@@ -102,15 +102,19 @@ export default function Footer() {
             <ul className="space-y-3 text-xs">
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#FFD100]" />
-                <span className="text-slate-200">0850 300 JABRA (5227)</span>
+                <a href="tel:08508500856" className="text-slate-200 hover:text-[#FFD100] transition-colors font-semibold">
+                  0850 850 08 56
+                </a>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#FFD100]" />
-                <span className="text-slate-200">info@jabrapartner.com.tr</span>
+                <a href="mailto:destek@tescom.com.tr" className="text-slate-200 hover:text-[#FFD100] transition-colors">
+                  destek@tescom.com.tr
+                </a>
               </li>
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#FFD100] mt-0.5" />
-                <span>Maslak No:1 Plaza, Sarıyer / İstanbul</span>
+                <span>Barbaros Hayrettin Paşa Mah. Şehitler Cad. Gümüş Residence No: 8 Daire: 323 Esenyurt / İSTANBUL</span>
               </li>
             </ul>
             <div className="mt-4 pt-3 border-t border-slate-800">
@@ -120,11 +124,14 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
-          <p>© {new Date().getFullYear()} jabrapartner.com.tr — Jabra Türkiye Kurumsal Portföy & Proje Merkezi.</p>
+          <p>© {new Date().getFullYear()} jabrapartner.com.tr — TESCOM TELEKOMÜNİKASYON VE İLETİŞİM HİZ. SAN. TİC. LTD. ŞTİ.</p>
           <div className="flex space-x-6 text-slate-500">
-            <span>Kurumsal Satış Şartları</span>
-            <span>Gizlilik Politikası</span>
-            <span>Garanti & RMA Süreçleri</span>
+            <Link href="/kvkk" className="hover:text-[#FFD100] transition-colors">
+              KVKK Aydınlatma Metni
+            </Link>
+            <Link href="/proje-teklifi" className="hover:text-[#FFD100] transition-colors">
+              Proje Teklifi Al
+            </Link>
           </div>
         </div>
       </div>

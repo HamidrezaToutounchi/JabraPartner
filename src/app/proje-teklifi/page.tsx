@@ -40,7 +40,7 @@ export default function ProjeTeklifiPage() {
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
-                <span>Alt Bayiler ve Entegratörler İçin Marj Koruması</span>
+                <span>Toplu Kurumsal Alımlarda Özel Proje İskontosu</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0" />
@@ -52,11 +52,15 @@ export default function ProjeTeklifiPage() {
               <span className="text-xs font-black text-slate-900 block">Yetkili Partner İletişimi:</span>
               <div className="flex items-center gap-3 text-xs text-slate-700">
                 <PhoneCall className="w-4 h-4 text-amber-600" />
-                <span className="font-semibold">0850 300 JABRA (5227)</span>
+                <a href="tel:08508500856" className="font-semibold hover:text-amber-600 transition-colors">
+                  0850 850 08 56
+                </a>
               </div>
               <div className="flex items-center gap-3 text-xs text-slate-700">
                 <Mail className="w-4 h-4 text-amber-600" />
-                <span className="font-semibold">info@jabrapartner.com.tr</span>
+                <a href="mailto:destek@tescom.com.tr" className="font-semibold hover:text-amber-600 transition-colors">
+                  destek@tescom.com.tr
+                </a>
               </div>
             </div>
           </div>
